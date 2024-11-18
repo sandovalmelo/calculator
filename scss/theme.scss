@@ -1,0 +1,86 @@
+.theme {
+	text-transform: uppercase;
+	color: var(--text);
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+.theme-control {
+	color: var(--text);
+	display: flex;
+	align-items: end;
+	gap: 1.5rem;
+}
+
+.btn-numbers {
+	width: 100px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+
+.btn {
+	flex: 1;
+	border: none;
+	background-color: transparent;
+	color: var(--text);
+	cursor: pointer;
+	font-family: inherit;
+}
+
+.switch {
+	background-color: var(--keypad-background);
+	width: 100px;
+	height: 30px;
+	border-radius: 50px;
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.switch-radios {
+	position: relative;
+}
+
+.switch-radios > * {
+	position: absolute;
+	display: block;
+}
+
+input[type="radio"]:first-of-type {
+	right: 22px;
+}
+
+input[type="radio"]:nth-of-type(2) {
+	right: -10px;
+}
+
+input[type="radio"]:last-of-type {
+	right: -42px;
+}
+
+.ball {
+	background-color: var(--key-background-3);
+	height: 24px;
+	width: 24px;
+	border-radius: 50%;
+	position: absolute;
+	left: 4px;
+	top: 3px;
+	transition: left 0.5s ease;
+	cursor: pointer;
+
+	@media screen and (min-width: 980px) {
+		&:hover {
+			background-color: var(--hover-color-3);
+		}
+	}
+}
+
+input[type="radio"] {
+	cursor: pointer;
+	opacity: 0;
+}

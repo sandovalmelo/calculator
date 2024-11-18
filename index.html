@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="title">calc</h1>
+
+				<div class="theme-control">
+					<p class="theme">theme</p>
+
+					<div>
+						<div class="btn-numbers">
+							<button class="btn" id="btn-1">1</button>
+							<button class="btn" id="btn-2">2</button>
+							<button class="btn" id="btn-3">3</button>
+						</div>
+
+						<div class="switch">
+							<div class="switch-radios">
+								<input type="radio" name="theme-type" value="one" id="radio-1" />
+								<input type="radio" name="theme-type" value="two" id="radio-2" />
+								<input type="radio" name="theme-type" value="three" id="radio-3" />
+							</div>
+							<div class="ball"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="calculator">
+				<div class="display">
+					<span class="result"></span>
+				</div>
+
+				<div class="keys">
+					<button class="key key-7" value="7">7</button>
+					<button class="key key-8" value="8">8</button>
+					<button class="key key-9" value="9">9</button>
+					<button class="key key-del" value="">del</button>
+
+					<button class="key key-4" value="4">4</button>
+					<button class="key key-5" value="5">5</button>
+					<button class="key key-6" value="6">6</button>
+					<button class="key key-plus" value="+">+</button>
+
+					<button class="key key-1" value="1">1</button>
+					<button class="key key-2" value="2">2</button>
+					<button class="key key-3" value="3">3</button>
+					<button class="key key-minus" value="-">-</button>
+
+					<button class="key key-dot" value=".">.</button>
+					<button class="key key-0" value="0">0</button>
+					<button class="key key-division" value="/">/</button>
+					<button class="key key-multiplication" value="*">x</button>
+
+					<button class="key key-reset">reset</button>
+					<button class="key key-equal">=</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="./scripts.js"></script>
+	</body>
+</html>

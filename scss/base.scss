@@ -1,0 +1,96 @@
+:root {
+	// text
+	--text: hsl(0, 0%, 100%);
+
+	--key-text-1: hsl(221, 14%, 31%);
+	--key-text-2: hsl(0, 0%, 100%);
+	--key-text-3: hsl(0, 0%, 100%);
+	// backgrounds
+	--main-background: hsl(222, 26%, 31%);
+	--keypad-background: hsl(223, 31%, 20%);
+	--screen-background: hsl(224, 36%, 15%);
+	// keys
+	--key-background-1: hsl(30, 25%, 89%);
+	--key-shadow-1: hsl(28, 16%, 65%);
+	--hover-color-1: hsl(0, 0%, 100%);
+
+	--key-background-2: hsl(225, 21%, 49%);
+	--key-shadow-2: hsl(224, 28%, 35%);
+	--hover-color-2: hsl(224, 51%, 76%);
+
+	--key-background-3: hsl(6, 63%, 50%);
+	--key-shadow-3: hsl(6, 70%, 34%);
+	--hover-color-3: hsl(6, 93%, 67%);
+
+	--border-radius: 8px;
+	--medium-screen: 400px;
+}
+
+[data-theme="two"] {
+	// text
+	--text: hsl(60, 10%, 19%);
+
+	--key-text-1: hsl(60, 10%, 19%);
+	--key-text-2: hsl(0, 0%, 100%);
+	--key-text-3: hsl(0, 0%, 100%);
+
+	// backgrounds
+	--main-background: hsl(30, 25%, 89%);
+	--keypad-background: hsl(0, 5%, 81%);
+	--screen-background: hsl(0, 0%, 93%);
+	// keys
+	--key-background-1: hsl(45, 7%, 89%);
+	--key-shadow-1: hsl(35, 11%, 61%);
+	--hover-color-1: hsl(0, 0%, 100%);
+
+	--key-background-2: hsl(185, 42%, 37%);
+	--key-shadow-2: hsl(185, 58%, 25%);
+	--hover-color-2: hsl(184, 40%, 56%);
+
+	--key-background-3: hsl(25, 98%, 40%);
+	--key-shadow-3: hsl(25, 99%, 27%);
+	--hover-color-3: hsl(25, 100%, 61%);
+}
+
+[data-theme="three"] {
+	// text
+	--text: hsl(52, 100%, 62%);
+
+	--key-text-1: hsl(52, 100%, 62%);
+	--key-text-2: hsl(0, 0%, 100%);
+	--key-text-3: hsl(268, 75%, 9%);
+
+	// backgrounds
+	--main-background: hsl(268, 75%, 9%);
+	--keypad-background: hsl(268, 71%, 12%);
+	--screen-background: hsl(268, 71%, 12%);
+	// keys
+	--key-background-1: hsl(268, 47%, 21%);
+	--key-shadow-1: hsl(290, 70%, 36%);
+	--hover-color-1: hsl(268, 54%, 44%);
+
+	--key-background-2: hsl(281, 89%, 26%);
+	--key-shadow-2: hsl(285, 91%, 52%);
+	--hover-color-2: hsl(280, 56%, 44%);
+
+	--key-background-3: hsl(176, 100%, 44%);
+	--key-shadow-3: hsl(177, 92%, 70%);
+	--hover-color-3: hsl(176, 100%, 79%);
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--main-background);
+	font-family: "League Spartan", serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100dvh;
+}
